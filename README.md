@@ -4,12 +4,12 @@
 
 # **_Table of Contents_**
 
-* [Introduction]
-* [Lab 1]
-* [Lab 2]
-* [Lab 3]
-* [Lab 4]
-* [Lab 5]
+* [Introduction](https://github.com/Pramod-Krishna/Sign-off-Timing-Analysis/blob/main/README.md#introduction)
+* [Lab 1](https://github.com/Pramod-Krishna/Sign-off-Timing-Analysis/blob/main/README.md#opensta)
+* [Lab 2](https://github.com/Pramod-Krishna/Sign-off-Timing-Analysis/blob/main/README.md#to-find-the-number-of-cells)
+* [Lab 3](https://github.com/Pramod-Krishna/Sign-off-Timing-Analysis/blob/main/README.md#lab-3)
+* [Lab 4](https://github.com/Pramod-Krishna/Sign-off-Timing-Analysis/blob/main/README.md#lab-4)
+* [Lab 5](https://github.com/Pramod-Krishna/Sign-off-Timing-Analysis/blob/main/README.md#lab-5)
 
 ***
 
@@ -18,6 +18,8 @@
 Static Timing Analysis (STA) is a technique used in digital circuit design to evaluate the timing characteristics of a circuit. The objective of STA is to ensure that a design meets its timing requirements, which are typically expressed as constraints on the minimum and maximum delays of critical paths in the circuit. STA is a critical step in the design process, as it helps ensure that a circuit will operate reliably and meet its performance requirements. It does not depend on test vector or a test bench, rather uses mathematical techniques. It only works with synchronous systems and does not do logical simulations.
 
 OpenSTA is an open-source software tool used for Static Timing Analysis (STA) in digital circuit design. The inputs to STA are Netlist, constraints and logic library. STA breaks the path as Ports and Sequential Elements. 
+
+# LAB 1 
 
 ## [OpenSTA]()
 
@@ -55,6 +57,8 @@ These are specified in the Synopsis Design Constraints Format
 
 ![image](https://user-images.githubusercontent.com/54993262/220515387-a6b6e513-01c7-40d6-9925-bfc4c10f6895.png)
 The first line of code generates a clock of period 10, and gives the info regarding the rise and fall times.
+
+# LAB 2
 
 ## To find the number of cells 
 One option is to write a python script:
@@ -118,6 +122,7 @@ Async Pin Check are done for all the async pins of the flop not just the reset p
 Observations - All the 8 paths are violated, the first path ie u3-> u4-> u5-> u7 has the highest slack (-217.32). Path 8 ie: F1-> u6 -> u7 -> F2 has a slack of -152.
 
 # Lab 5
+## Eco Insertion
 ```
 cat run.tcl
 ```
@@ -136,7 +141,8 @@ s27.v
 We can observe the difference by seeing the slack values, after running sta
 # Acknowledgement
 * [Kunal Ghosh](https://github.com/kunalg123/)
-* [Vikas Sachdeva]
+* [Vikas Sachdeva](https://github.com/vikkisachdeva)
 
 # References
 * [Sky130 Technology](https://github.com/google/skywater-pdk)
+* [OpenSTA](https://github.com/The-OpenROAD-Project/OpenSTA)
