@@ -95,7 +95,7 @@ can be used to read it.
 ![image](https://user-images.githubusercontent.com/54993262/220540119-a055d70e-b667-49b2-9686-71afbb83cb19.png)
 
 Timing Report
-https://github.com/Pramod-Krishna/Sign-off-Timing-Analysis/blob/main/README.md
+![image](https://user-images.githubusercontent.com/54993262/220591801-844b75df-8c18-4876-ab39-4120347179f2.png)
 
 # LAB 3
 
